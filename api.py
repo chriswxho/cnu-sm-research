@@ -5,7 +5,6 @@ import os
 import secrets
 from typing import Optional
 
-import pandas as pd
 import requests
 import requests.auth as auth
 
@@ -159,7 +158,13 @@ def search_posts(
             )
 
     print(f"Submissions query for {subreddit_name=}, {query_term=} yielded {len(seen_ids)} submissions")
-    return list(itertools.chain.from_iterable(result["data"]["children"] for result in results))
+    posts_data = []
+    for post_data in itertools.chain.from_iterable(result["data"]["children"] for result in results):
+        post_data = post_data["data"]
+        post_data["query"] = query_term
+        posts_data.append(post_data)
+    
+    return posts_data
 
 
 def get_comments(post_id: str, comment_id: Optional[str] = None) -> list[dict[str, object]]:
