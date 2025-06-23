@@ -129,7 +129,7 @@ class RedditRequestManager:
         resp = requests.get(query, headers=self._headers)
         if resp.status_code != 200:
             raise requests.RequestException(
-                f"Didn't get a 200 for this query, got response: {resp.content}",
+                f"Expected a [200] status for this query, got [{resp.status_code}] response: {resp.content}",
             )
         if "X-Ratelimit-Used" not in resp.headers:
             print(f"{REQUESTS_MANAGER_LOG_PREFIX} No ratelimit info available for this request. {resp.headers=}")
@@ -232,11 +232,6 @@ class RedditRequestManager:
     def get_comments(self, post_id: str, comment_id: Optional[str] = None) -> list[dict[str, object]]:
         query = build_toplevel_comment_endpoint_query(post_id, comment_id)
         comments_resp = self._request_get(query)
-        if comments_resp.status_code != 200:
-            raise requests.RequestException(
-                f"Didn't get a 200 when attempting OAuth authorization, got response: {comments_resp.content}"
-            )
-        
         comments_resp_loaded = comments_resp.json()
         assert len(comments_resp_loaded) == 2, (
             f"Expected comment response JSON to have 2 elements but got {len(comments_resp_loaded)} elements"
@@ -274,10 +269,6 @@ class RedditRequestManager:
                     comment_ids_batch = comment_ids[curr:next]
                     query = build_more_children_comment_endpoint_query(post_id, comment_ids_batch)
                     more_children_resp = self._request_get(query)
-                    if more_children_resp.status_code != 200:
-                        raise requests.RequestException(
-                            f"Didn't get a 200 when attempting OAuth authorization, got response: {more_children_resp.content}"
-                        )
                     things = more_children_resp.json()["json"]["data"]["things"]
                     # batch the requests, otherwise we'll end up with a lot of wasted requests
                     next_comment_ids = []
