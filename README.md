@@ -20,7 +20,8 @@ python3 -m venv cnu-sm-research
 source cnu-sm-research/bin/activate
 pip3 install -r requirements.txt
 
-// Open JupyterLab. It will create a webpage with a notebook UI, go to `playground.ipynb` to experiment!
+// Open JupyterLab. It will create a webpage with a notebook UI,
+// go to `playground.ipynb` to experiment!
 jupyter lab
 ```
 
