@@ -2,8 +2,10 @@
 All things related to social media research performed by CNU School of Medicine.
 
 ## Setup
-Requires Python 3.7+ probably. Haven't verified personally but it probably works.
-Download `keys.json` from [Google Drive](https://drive.google.com/file/d/1iy0SgMLE9nUbWr27QuKhzAIPczcJkCRO/view?usp=drive_link); request access.
+
+### Prerequisites
+- Requires Python 3.7+ probably. Haven't verified personally but it probably works.
+- Download `keys.json` from [Google Drive](https://drive.google.com/file/d/1iy0SgMLE9nUbWr27QuKhzAIPczcJkCRO/view?usp=drive_link); request access.
 
 In the Mac Terminal, enter these commands:
 ```
