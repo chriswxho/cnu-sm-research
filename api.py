@@ -276,9 +276,10 @@ class RedditRequestManager:
                         if thing["kind"] == "more" and thing["data"]["count"] > 0:
                             next_comment_ids.extend(thing["data"]["children"])
                         else:
-                            comments_data.append(thing["data"])
                             if "replies" in thing["data"] and len(thing["data"]["replies"]) > 0:
                                 next_comment_ids.extend(thing["data"]["replies"])
+                            if thing["data"]["id"] != "_":
+                                comments_data.append(thing["data"])
 
                     if len(next_comment_ids) > 0:
                         dfs_morechildren(next_comment_ids, comments_data, depth+1)
