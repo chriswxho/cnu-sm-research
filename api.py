@@ -270,7 +270,8 @@ class RedditRequestManager:
                     query = build_more_children_comment_endpoint_query(post_id, comment_ids_batch)
                     more_children_resp = self._request_get(query)
                     things = more_children_resp.json()["json"]["data"]["things"]
-                    # batch the requests, otherwise we'll end up with a lot of wasted requests
+                    # batch the requests per dfs search, otherwise we'll end up with a lot of wasted requests
+                    # TODO: can we make this more query-efficient by converting this to a bfs?
                     next_comment_ids = []
                     for thing in things:
                         if thing["kind"] == "more" and thing["data"]["count"] > 0:
@@ -278,7 +279,8 @@ class RedditRequestManager:
                         else:
                             if "replies" in thing["data"] and len(thing["data"]["replies"]) > 0:
                                 next_comment_ids.extend(thing["data"]["replies"])
-                            if thing["data"]["id"] != "_":
+                            # sometimes the data object is blank, filter out these instances
+                            if thing["data"]["id"] != "_": 
                                 comments_data.append(thing["data"])
 
                     if len(next_comment_ids) > 0:

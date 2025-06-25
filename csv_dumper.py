@@ -55,10 +55,6 @@ def extract_post_data(posts_data: list[dict[str, object]], filename: str) -> Non
 def extract_comment_data(comments_data: list[dict[str, object]], filename: str) -> None:
     comments_data_dict = defaultdict(list)
     for data in comments_data:
-        # if "subreddit" not in data:
-        #     # TODO: take care of the weird case in API side
-        #     # `{'count': 0, 'name': 't1__', 'id': '_', 'parent_id': 't1_mz9gdku', 'depth': 10, 'children': []}`
-        #     continue
         for field in COMMENT_DATA_FIELDS:
             value = data[field]
             if field == "created":
