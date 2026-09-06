@@ -1,0 +1,3 @@
+stage_order,stage_name,rule_order,rule_id,action,Removal criteria,records_before,records_matched,records_after,notes
+1,semantic_review,1,SEMANTIC_FALSE_POSITIVE,EXCLUDE,contains category: semantic false positive (not a first-person account of real or plausibly real harmful sibling behavior),8812,3000,5812,FICTION_MEDIA=604; IRRELEVANT_KEYWORD=83; JOKE_OR_HYPOTHETICAL=10; META_RESEARCH_GENERIC=332; NONHUMAN=90; ORDINARY_CONFLICT=104; PERPETRATOR_ONLY=90; REPOST_ARCHIVE=170; SEXUAL_FANTASY_ROLEPLAY=310; THIRD_PERSON_VICTIM=768; WRONG_RELATION=439
+1,semantic_review,2,SEMANTIC_UNCERTAIN,RETAIN_FLAGGED,retained category: semantic review uncertain,5812,327,5812,Uncertain records remain in the classification set.

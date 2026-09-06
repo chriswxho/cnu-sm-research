@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "query_text": "aggressive sister",
+  "query_slug": "aggressive-sister",
+  "reddit_query": "title:\"aggressive sister\" OR selftext:\"aggressive sister\"",
+  "pullpush_title_query": "\"aggressive sister\"",
+  "pullpush_selftext_query": "\"aggressive sister\"",
+  "start_pacific": "2005-01-01T00:00:00-08:00",
+  "cutoff_pacific_exclusive": "2026-07-26T16:20:32.777496-07:00",
+  "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_effective_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_root_window_years": 5,
+  "pullpush_request_timeout_sec": 120.0
+}

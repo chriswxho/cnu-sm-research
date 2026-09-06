@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "query_text": "abused by sibling",
+  "query_slug": "abused-by-sibling",
+  "reddit_query": "title:\"abused by sibling\" OR selftext:\"abused by sibling\"",
+  "pullpush_title_query": "\"abused by sibling\"",
+  "pullpush_selftext_query": "\"abused by sibling\"",
+  "start_pacific": "2005-01-01T00:00:00-08:00",
+  "cutoff_pacific_exclusive": "2026-07-26T15:07:12.331774-07:00",
+  "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_effective_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_root_window_years": 5,
+  "pullpush_request_timeout_sec": 120.0
+}

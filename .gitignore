@@ -2,3 +2,6 @@
 cnu-sm-research/*
 .ipynb_checkpoints/*
 keys.json
+.pullpush-rate-limit.sqlite3
+.pullpush-rate-limit.sqlite3-shm
+.pullpush-rate-limit.sqlite3-wal

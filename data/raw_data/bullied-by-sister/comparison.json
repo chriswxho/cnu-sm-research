@@ -1,0 +1,73 @@
+{
+  "criteria": {
+    "result_type": "post",
+    "phrase": "bullied by sister",
+    "query_slug": "bullied-by-sister",
+    "data_directory": "data/bullied-by-sister",
+    "match_rule": "Case-insensitive whole-word phrase after removing ASCII/full-width/curly quote characters only; all other punctuation and whitespace preserved.",
+    "reddit_query": "title:\"bullied by sister\" OR selftext:\"bullied by sister\"",
+    "reddit_time_filter": "all",
+    "reddit_local_date_filter": null,
+    "pullpush_title_query": "\"bullied by sister\"",
+    "pullpush_selftext_query": "\"bullied by sister\"",
+    "pullpush_start_epoch": 1104566400,
+    "pullpush_start_pacific": "2005-01-01T00:00:00-08:00",
+    "requested_cutoff_epoch_exclusive": 1785130491,
+    "requested_cutoff_pacific_exclusive": "2026-07-26T22:34:51.817579-07:00",
+    "pullpush_archive_cutoff_epoch_exclusive": 1751353200,
+    "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+    "pullpush_cutoff_epoch_exclusive": 1751353200,
+    "pullpush_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+    "pullpush_root_window_years": 5,
+    "pullpush_request_timeout_sec": 120.0
+  },
+  "reddit": {
+    "sorts_exhausted": {
+      "relevance": 8,
+      "hot": 7,
+      "top": 8,
+      "new": 8,
+      "comments": 8
+    },
+    "union_api_candidates": 8,
+    "post_filter_rejections": 0,
+    "quote_rescued_posts": 0,
+    "yielded_posts": 8,
+    "unique_subreddits": 8,
+    "earliest_epoch": 1551108396,
+    "earliest_pacific": "2019-02-25T07:26:36-08:00",
+    "latest_epoch": 1774619323,
+    "latest_pacific": "2026-03-27T06:48:43-07:00"
+  },
+  "pullpush": {
+    "max_results_per_window": 100,
+    "title_total_requests": 5,
+    "title_leaf_windows": 5,
+    "title_saturated_windows": 0,
+    "title_leaf_rows": 29,
+    "title_unique_ids": 27,
+    "selftext_total_requests": 5,
+    "selftext_leaf_windows": 5,
+    "selftext_saturated_windows": 0,
+    "selftext_leaf_rows": 12,
+    "selftext_unique_ids": 12,
+    "union_candidates": 36,
+    "candidates_in_bounds": 36,
+    "post_filter_rejections": 16,
+    "quote_rescued_posts": 1,
+    "yielded_posts": 20,
+    "unique_subreddits": 18,
+    "earliest_epoch": 1545408259,
+    "earliest_pacific": "2018-12-21T08:04:19-08:00",
+    "latest_epoch": 1733553148,
+    "latest_pacific": "2024-12-06T22:32:28-08:00"
+  },
+  "overlap": {
+    "shared_post_ids": 6,
+    "reddit_only_post_ids": 2,
+    "pullpush_only_post_ids": 14,
+    "union_post_ids": 22,
+    "reddit_coverage_of_pullpush_percent": 30.0,
+    "pullpush_coverage_of_reddit_percent": 75.0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "query_text": "aggressive brother",
+  "query_slug": "aggressive-brother",
+  "reddit_query": "title:\"aggressive brother\" OR selftext:\"aggressive brother\"",
+  "pullpush_title_query": "\"aggressive brother\"",
+  "pullpush_selftext_query": "\"aggressive brother\"",
+  "start_pacific": "2005-01-01T00:00:00-08:00",
+  "cutoff_pacific_exclusive": "2026-07-26T19:25:09.478800-07:00",
+  "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_effective_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_root_window_years": 5,
+  "pullpush_request_timeout_sec": 120.0
+}

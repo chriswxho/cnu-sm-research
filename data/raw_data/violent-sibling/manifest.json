@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "query_text": "violent sibling",
+  "query_slug": "violent-sibling",
+  "reddit_query": "title:\"violent sibling\" OR selftext:\"violent sibling\"",
+  "pullpush_title_query": "\"violent sibling\"",
+  "pullpush_selftext_query": "\"violent sibling\"",
+  "start_pacific": "2005-01-01T00:00:00-08:00",
+  "cutoff_pacific_exclusive": "2026-07-26T14:29:11.316953-07:00",
+  "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_effective_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_root_window_years": 5,
+  "pullpush_request_timeout_sec": 120.0
+}

@@ -1,0 +1,73 @@
+{
+  "criteria": {
+    "result_type": "post",
+    "phrase": "aggressive sibling",
+    "query_slug": "aggressive-sibling",
+    "data_directory": "data/aggressive-sibling",
+    "match_rule": "Case-insensitive whole-word phrase after removing ASCII/full-width/curly quote characters only; all other punctuation and whitespace preserved.",
+    "reddit_query": "title:\"aggressive sibling\" OR selftext:\"aggressive sibling\"",
+    "reddit_time_filter": "all",
+    "reddit_local_date_filter": null,
+    "pullpush_title_query": "\"aggressive sibling\"",
+    "pullpush_selftext_query": "\"aggressive sibling\"",
+    "pullpush_start_epoch": 1104566400,
+    "pullpush_start_pacific": "2005-01-01T00:00:00-08:00",
+    "requested_cutoff_epoch_exclusive": 1785106624,
+    "requested_cutoff_pacific_exclusive": "2026-07-26T15:57:04.464469-07:00",
+    "pullpush_archive_cutoff_epoch_exclusive": 1751353200,
+    "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+    "pullpush_cutoff_epoch_exclusive": 1751353200,
+    "pullpush_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+    "pullpush_root_window_years": 5,
+    "pullpush_request_timeout_sec": 120.0
+  },
+  "reddit": {
+    "sorts_exhausted": {
+      "relevance": 33,
+      "hot": 0,
+      "top": 35,
+      "new": 35,
+      "comments": 35
+    },
+    "union_api_candidates": 35,
+    "post_filter_rejections": 0,
+    "quote_rescued_posts": 0,
+    "yielded_posts": 35,
+    "unique_subreddits": 32,
+    "earliest_epoch": 1323181805,
+    "earliest_pacific": "2011-12-06T06:30:05-08:00",
+    "latest_epoch": 1783655392,
+    "latest_pacific": "2026-07-09T20:49:52-07:00"
+  },
+  "pullpush": {
+    "max_results_per_window": 100,
+    "title_total_requests": 5,
+    "title_leaf_windows": 5,
+    "title_saturated_windows": 0,
+    "title_leaf_rows": 54,
+    "title_unique_ids": 45,
+    "selftext_total_requests": 5,
+    "selftext_leaf_windows": 5,
+    "selftext_saturated_windows": 0,
+    "selftext_leaf_rows": 35,
+    "selftext_unique_ids": 33,
+    "union_candidates": 78,
+    "candidates_in_bounds": 78,
+    "post_filter_rejections": 17,
+    "quote_rescued_posts": 2,
+    "yielded_posts": 61,
+    "unique_subreddits": 43,
+    "earliest_epoch": 1278655001,
+    "earliest_pacific": "2010-07-08T22:56:41-07:00",
+    "latest_epoch": 1746252522,
+    "latest_pacific": "2025-05-02T23:08:42-07:00"
+  },
+  "overlap": {
+    "shared_post_ids": 23,
+    "reddit_only_post_ids": 12,
+    "pullpush_only_post_ids": 38,
+    "union_post_ids": 73,
+    "reddit_coverage_of_pullpush_percent": 37.7,
+    "pullpush_coverage_of_reddit_percent": 65.71
+  }
+}

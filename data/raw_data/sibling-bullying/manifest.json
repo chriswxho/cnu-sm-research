@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "query_text": "sibling bullying",
+  "query_slug": "sibling-bullying",
+  "reddit_query": "title:\"sibling bullying\" OR selftext:\"sibling bullying\"",
+  "pullpush_title_query": "\"sibling bullying\"",
+  "pullpush_selftext_query": "\"sibling bullying\"",
+  "start_pacific": "2005-01-01T00:00:00-08:00",
+  "cutoff_pacific_exclusive": "2026-07-26T15:42:48.376633-07:00",
+  "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_effective_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_root_window_years": 5,
+  "pullpush_request_timeout_sec": 120.0
+}

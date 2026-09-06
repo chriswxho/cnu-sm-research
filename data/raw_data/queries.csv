@@ -1,0 +1,20 @@
+query,reddit_post_count,pullpush_post_count
+sibling abuse,438,1211
+abusive sibling,338,724
+sibling violence,67,103
+violent sibling,37,82
+abused by sibling,5,12
+sibling aggression,36,62
+sibling bullying,157,285
+aggressive sibling,35,61
+bullied by sibling,3,7
+aggressive sister,57,183
+violent sister,50,93
+abusive sister,479,1855
+aggressive brother,103,219
+violent brother,209,455
+abusive brother,522,3468
+bullied by sister,8,20
+bullied by brother,12,40
+abused by sister,15,34
+abused by brother,35,103

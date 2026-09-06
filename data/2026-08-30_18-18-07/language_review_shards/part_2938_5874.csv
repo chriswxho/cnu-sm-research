@@ -1,0 +1,3 @@
+row_index,post_link,language_classification,detected_language,classification_rationale
+3164,https://www.reddit.com/r/OffMyChestPH/comments/12kjsx6/the_monster_ive_become/,NON_ENGLISH,Filipino-English (Taglish),"The title is English, but the substantive narrative is predominantly Filipino/Tagalog code-switching; English passages are interspersed and do not make English the dominant language."
+4995,https://www.reddit.com/r/MentalHealthPH/comments/ne8jv6/bullied_by_sibling_because_of_my_acne/,NON_ENGLISH,Filipino-English (Taglish),"The English title and scattered English terms introduce a body written overwhelmingly in Filipino/Tagalog, which is the dominant meaningful language."

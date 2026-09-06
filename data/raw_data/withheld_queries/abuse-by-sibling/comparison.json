@@ -1,0 +1,73 @@
+{
+  "criteria": {
+    "result_type": "post",
+    "phrase": "abuse by sibling",
+    "query_slug": "abuse-by-sibling",
+    "data_directory": "data/abuse-by-sibling",
+    "match_rule": "Case-insensitive whole-word phrase after removing ASCII/full-width/curly quote characters only; all other punctuation and whitespace preserved.",
+    "reddit_query": "title:\"abuse by sibling\" OR selftext:\"abuse by sibling\"",
+    "reddit_time_filter": "all",
+    "reddit_local_date_filter": null,
+    "pullpush_title_query": "\"abuse by sibling\"",
+    "pullpush_selftext_query": "\"abuse by sibling\"",
+    "pullpush_start_epoch": 1104566400,
+    "pullpush_start_pacific": "2005-01-01T00:00:00-08:00",
+    "requested_cutoff_epoch_exclusive": 1785103433,
+    "requested_cutoff_pacific_exclusive": "2026-07-26T15:03:53.795293-07:00",
+    "pullpush_archive_cutoff_epoch_exclusive": 1751353200,
+    "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+    "pullpush_cutoff_epoch_exclusive": 1751353200,
+    "pullpush_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+    "pullpush_root_window_years": 5,
+    "pullpush_request_timeout_sec": 120.0
+  },
+  "reddit": {
+    "sorts_exhausted": {
+      "relevance": 5,
+      "hot": 5,
+      "top": 5,
+      "new": 5,
+      "comments": 5
+    },
+    "union_api_candidates": 5,
+    "post_filter_rejections": 0,
+    "quote_rescued_posts": 0,
+    "yielded_posts": 5,
+    "unique_subreddits": 5,
+    "earliest_epoch": 1600093798,
+    "earliest_pacific": "2020-09-14T07:29:58-07:00",
+    "latest_epoch": 1774399951,
+    "latest_pacific": "2026-03-24T17:52:31-07:00"
+  },
+  "pullpush": {
+    "max_results_per_window": 100,
+    "title_total_requests": 5,
+    "title_leaf_windows": 5,
+    "title_saturated_windows": 0,
+    "title_leaf_rows": 60,
+    "title_unique_ids": 59,
+    "selftext_total_requests": 7,
+    "selftext_leaf_windows": 6,
+    "selftext_saturated_windows": 0,
+    "selftext_leaf_rows": 131,
+    "selftext_unique_ids": 131,
+    "union_candidates": 190,
+    "candidates_in_bounds": 190,
+    "post_filter_rejections": 180,
+    "quote_rescued_posts": 0,
+    "yielded_posts": 10,
+    "unique_subreddits": 10,
+    "earliest_epoch": 1590134556,
+    "earliest_pacific": "2020-05-22T01:02:36-07:00",
+    "latest_epoch": 1739021590,
+    "latest_pacific": "2025-02-08T05:33:10-08:00"
+  },
+  "overlap": {
+    "shared_post_ids": 3,
+    "reddit_only_post_ids": 2,
+    "pullpush_only_post_ids": 7,
+    "union_post_ids": 12,
+    "reddit_coverage_of_pullpush_percent": 30.0,
+    "pullpush_coverage_of_reddit_percent": 60.0
+  }
+}

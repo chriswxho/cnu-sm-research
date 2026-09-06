@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "query_text": "bullied by sister",
+  "query_slug": "bullied-by-sister",
+  "reddit_query": "title:\"bullied by sister\" OR selftext:\"bullied by sister\"",
+  "pullpush_title_query": "\"bullied by sister\"",
+  "pullpush_selftext_query": "\"bullied by sister\"",
+  "start_pacific": "2005-01-01T00:00:00-08:00",
+  "cutoff_pacific_exclusive": "2026-07-26T22:34:51.817579-07:00",
+  "pullpush_archive_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_effective_cutoff_pacific_exclusive": "2025-07-01T00:00:00-07:00",
+  "pullpush_root_window_years": 5,
+  "pullpush_request_timeout_sec": 120.0
+}
