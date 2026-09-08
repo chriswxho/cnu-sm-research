@@ -43,9 +43,14 @@ def read_codebook(path: Path = CODEBOOK) -> list[str]:
 
 def annotation_path_for_posts(posts_path: Path) -> Path:
     """Derive the annotation path within a timestamped bundle."""
+    in_bundle_root = STAMP_PATTERN.fullmatch(posts_path.parent.name) is not None
+    in_agent_codebook = (
+        posts_path.parent.name == "agent_codebook"
+        and STAMP_PATTERN.fullmatch(posts_path.parent.parent.name) is not None
+    )
     if (
         posts_path.name != "dedup_posts.csv"
-        or STAMP_PATTERN.fullmatch(posts_path.parent.name) is None
+        or not (in_bundle_root or in_agent_codebook)
     ):
         raise ValueError(
             "Expected data/YYYY-MM-DD_HH-MM-SS/dedup_posts.csv, "

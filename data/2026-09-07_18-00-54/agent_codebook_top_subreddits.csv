@@ -1,0 +1,126 @@
+codebook_category,rank,subreddit,post_count
+abusive older sibling,1,CPTSD,101
+abusive older sibling,2,offmychest,55
+abusive older sibling,3,raisedbynarcissists,54
+abusive younger sibling,1,relationships,8
+abusive younger sibling,2,relationship_advice,4
+abusive younger sibling,3,CPTSD,3
+abusive younger sibling,3,offmychest,3
+mentions physical abuse,1,CPTSD,182
+mentions physical abuse,2,raisedbynarcissists,174
+mentions physical abuse,3,Advice,124
+mentions sexual abuse,1,CPTSD,6
+mentions sexual abuse,2,raisedbynarcissists,3
+mentions sexual abuse,2,relationship_advice,3
+mentions verbal/emotional/psychological abuse,1,CPTSD,242
+mentions verbal/emotional/psychological abuse,2,raisedbynarcissists,227
+mentions verbal/emotional/psychological abuse,3,Advice,147
+sibling is also abusive or violent towards father,1,abusivesiblings,2
+sibling is also abusive or violent towards father,2,abusiverelationships,1
+sibling is also abusive or violent towards father,2,Advice,1
+sibling is also abusive or violent towards father,2,AgingParents,1
+sibling is also abusive or violent towards father,2,AsianParentStories,1
+sibling is also abusive or violent towards father,2,family,1
+sibling is also abusive or violent towards father,2,LegalAdviceUK,1
+sibling is also abusive or violent towards mother,1,Advice,6
+sibling is also abusive or violent towards mother,2,family,4
+sibling is also abusive or violent towards mother,2,raisedbynarcissists,4
+sibling is also abusive or violent towards mother,2,relationships,4
+sibling is also abusive or violent towards mother,2,TrueOffMyChest,4
+sibling is also abusive towards other siblings,1,relationships,2
+sibling is also abusive towards other siblings,2,AmItheAsshole,1
+dismissed by parent,1,raisedbynarcissists,62
+dismissed by parent,2,CPTSD,47
+dismissed by parent,3,relationships,27
+dismissed by family member (non-parent),1,relationships,3
+dismissed by family member (non-parent),2,abusesurvivors,1
+dismissed by family member (non-parent),2,abusivesiblings,1
+dismissed by family member (non-parent),2,AITAH,1
+dismissed by non-family adult (not healthcare worker),1,CPTSD,2
+dismissed by non-family adult (not healthcare worker),2,abusesurvivors,1
+dismissed by non-family adult (not healthcare worker),2,abusiverelationships,1
+dismissed by non-family adult (not healthcare worker),2,adultsurvivors,1
+dismissed by non-family adult (not healthcare worker),2,legaladvice,1
+dismissed by non-family adult (not healthcare worker),2,MMFB,1
+dismissed by non-family adult (not healthcare worker),2,parentlessbychoice,1
+dismissed by non-family adult who is a healthcare worker or counselor,1,abuse,1
+dismissed by non-family adult who is a healthcare worker or counselor,1,relationships,1
+dismissed by friend/peer,1,offmychest,2
+dismissed by friend/peer,2,abusiverelationships,1
+dismissed by friend/peer,2,AmItheAsshole,1
+dismissed by friend/peer,2,relationships,1
+expresses guilt or blames themself (their fault),1,CPTSD,34
+expresses guilt or blames themself (their fault),2,raisedbynarcissists,27
+expresses guilt or blames themself (their fault),3,AITAH,13
+expresses helplessness,1,CPTSD,46
+expresses helplessness,2,Advice,42
+expresses helplessness,2,raisedbynarcissists,42
+expresses isolation/feeling alone,1,CPTSD,36
+expresses isolation/feeling alone,2,raisedbynarcissists,31
+expresses isolation/feeling alone,3,SuicideWatch,21
+expresses fear,1,CPTSD,17
+expresses fear,2,Advice,14
+expresses fear,3,relationship_advice,13
+mentions disability or mental health issues of abusive sibling (take note of reported mental health issue),1,raisedbynarcissists,37
+mentions disability or mental health issues of abusive sibling (take note of reported mental health issue),2,CPTSD,34
+mentions disability or mental health issues of abusive sibling (take note of reported mental health issue),3,Advice,27
+mentions feeling unsafe at home or wanting to avoid home,1,relationships,4
+mentions feeling unsafe at home or wanting to avoid home,2,Advice,2
+mentions feeling unsafe at home or wanting to avoid home,2,CPTSD,2
+mentions feeling unsafe at home or wanting to avoid home,2,family,2
+"mentions own mental health issues as result (depression, anxiety, suicidal ideation, etc.)",1,CPTSD,153
+"mentions own mental health issues as result (depression, anxiety, suicidal ideation, etc.)",2,raisedbynarcissists,87
+"mentions own mental health issues as result (depression, anxiety, suicidal ideation, etc.)",3,relationship_advice,60
+needing to isolate from family,1,raisedbynarcissists,5
+needing to isolate from family,2,AITAH,2
+needing to isolate from family,2,relationships,2
+felt supported by parent,1,relationships,4
+felt supported by parent,2,Advice,3
+felt supported by parent,3,adultsurvivors,2
+felt supported by family member (non-parent),1,CPTSD,2
+felt supported by family member (non-parent),1,JUSTNOFAMILY,2
+felt supported by family member (non-parent),1,offmychest,2
+felt supported by family member (non-parent),1,raisedbynarcissists,2
+felt supported by non-family adult (healthcare or not healthcare),1,CPTSD,2
+felt supported by non-family adult (healthcare or not healthcare),1,offmychest,2
+felt supported by non-family adult (healthcare or not healthcare),3,BipolarReddit,1
+felt supported by non-family adult (healthcare or not healthcare),3,EstrangedAdultChild,1
+felt supported by non-family adult (healthcare or not healthcare),3,JUSTNOMIL,1
+felt supported by non-family adult (healthcare or not healthcare),3,relationships,1
+felt supported by non-family adult (healthcare or not healthcare),3,survivorsofabuse,1
+felt supported by non-family adult (healthcare or not healthcare),3,TalkTherapy,1
+felt supported by friend/peer,1,Advice,2
+felt supported by friend/peer,1,AITAH,2
+felt supported by friend/peer,3,almosthomeless,1
+felt supported by friend/peer,3,AstrologyCharts,1
+felt supported by friend/peer,3,CPTSD,1
+felt supported by friend/peer,3,GriefSupport,1
+felt supported by friend/peer,3,LifeAdvice,1
+felt supported by friend/peer,3,offmychest,1
+felt supported by friend/peer,3,raisedbynarcissists,1
+felt supported by friend/peer,3,TrueOffMyChest,1
+"secrecy (has had to lie to friends, or not disclosed to counselor or healthcare worker, was asked to keep secret, etc.)",1,offmychest,6
+"secrecy (has had to lie to friends, or not disclosed to counselor or healthcare worker, was asked to keep secret, etc.)",2,abuse,4
+"secrecy (has had to lie to friends, or not disclosed to counselor or healthcare worker, was asked to keep secret, etc.)",3,adultsurvivors,3
+"secrecy (has had to lie to friends, or not disclosed to counselor or healthcare worker, was asked to keep secret, etc.)",3,Advice,3
+"secrecy (has had to lie to friends, or not disclosed to counselor or healthcare worker, was asked to keep secret, etc.)",3,AITAH,3
+mentions cultural stigma or cultural influences on abuse,1,Anxiety,2
+mentions cultural stigma or cultural influences on abuse,1,Christianity,2
+mentions cultural stigma or cultural influences on abuse,1,depression,2
+mentions cultural stigma or cultural influences on abuse,1,exmormon,2
+mentions cultural stigma or cultural influences on abuse,1,exmuslim,2
+mentions cultural stigma or cultural influences on abuse,1,MuslimCorner,2
+mentions cultural stigma or cultural influences on abuse,1,MuslimLounge,2
+mentions attempts to limit contact or stay away,1,raisedbynarcissists,56
+mentions attempts to limit contact or stay away,2,CPTSD,42
+mentions attempts to limit contact or stay away,3,relationships,37
+mentions abusive parents or parents participating in abuse,1,raisedbynarcissists,82
+mentions abusive parents or parents participating in abuse,2,CPTSD,60
+mentions abusive parents or parents participating in abuse,3,offmychest,29
+mentions abusive parents or parents participating in abuse,3,relationships,29
+mentions attempt to reach out for help or file report or contact authorities (successfully or unsuccessfully),1,Advice,77
+mentions attempt to reach out for help or file report or contact authorities (successfully or unsuccessfully),2,raisedbynarcissists,63
+mentions attempt to reach out for help or file report or contact authorities (successfully or unsuccessfully),3,relationship_advice,58
+mentions abuse targeting their sexual orientation,1,CPTSD,2
+mentions abuse targeting their sexual orientation,1,offmychest,2
+mentions abuse targeting their sexual orientation,1,relationships,2

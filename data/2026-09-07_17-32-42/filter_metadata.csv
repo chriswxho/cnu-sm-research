@@ -1,0 +1,11 @@
+stage_order,stage_name,rule_order,rule_id,action,Removal criteria,records_before,records_matched,records_after,notes
+1,query_selection,1,UNSELECTED_QUERY_ONLY,EXCLUDE,search-term membership contains none of the selected queries,8812,1186,7626,Selected queries: sibling abuse; abusive sibling; abusive sister; abusive brother; sibling aggression; aggressive sibling; aggressive sister; aggressive brother
+2,semantic_review,1,SEMANTIC_FALSE_POSITIVE,EXCLUDE,contains category: semantic false positive (not a first-person account of real or plausibly real harmful sibling behavior),7626,2396,5230,FICTION_MEDIA=470; IRRELEVANT_KEYWORD=52; JOKE_OR_HYPOTHETICAL=8; META_RESEARCH_GENERIC=223; NONHUMAN=76; ORDINARY_CONFLICT=89; PERPETRATOR_ONLY=82; REPOST_ARCHIVE=122; SEXUAL_FANTASY_ROLEPLAY=256; THIRD_PERSON_VICTIM=624; WRONG_RELATION=394
+2,semantic_review,2,SEMANTIC_UNCERTAIN,RETAIN_FLAGGED,retained category: semantic review uncertain,5230,266,5230,Uncertain records remain in the classification set.
+3,deterministic_curation,1,REMOVED_BODY,EXCLUDE,contains only text: '[removed]' after trimming whitespace (case-insensitive),5230,651,4579,Evaluated after every preceding curation rule.
+3,deterministic_curation,2,DELETED_BODY,EXCLUDE,"contains only text: '[deleted]', optionally followed by one standalone link",4579,584,3995,Evaluated after every preceding curation rule.
+3,deterministic_curation,3,BLANK_BODY,EXCLUDE,contains only: blank or whitespace body,3995,92,3903,Evaluated after every preceding curation rule.
+3,deterministic_curation,4,LINK_ONLY_BODY,EXCLUDE,contains only: one standalone plain or Markdown link,3903,1,3902,Evaluated after every preceding curation rule.
+3,deterministic_curation,5,AGGRESSION_QUERY_ONLY,EXCLUDE,"search-term membership contains only: 'sibling aggression', 'aggressive sibling', 'aggressive sister', or 'aggressive brother'",3902,108,3794,Evaluated after every preceding curation rule.
+3,deterministic_curation,6,NON_ENGLISH,EXCLUDE,contains category: non-English language,3794,7,3787,Evaluated after every preceding curation rule.
+3,deterministic_curation,7,LANGUAGE_UNCERTAIN,RETAIN_FLAGGED,retained category: uncertain or mixed language,3787,5,3787,Flag does not remove records.

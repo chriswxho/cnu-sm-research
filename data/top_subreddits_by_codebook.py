@@ -43,9 +43,14 @@ def read_codebook(path: Path = CODEBOOK) -> list[str]:
 
 def paired_paths(posts_path: Path) -> tuple[Path, Path]:
     """Return annotation and analysis paths in the post bundle."""
+    in_bundle_root = STAMP_PATTERN.fullmatch(posts_path.parent.name) is not None
+    in_agent_codebook = (
+        posts_path.parent.name == "agent_codebook"
+        and STAMP_PATTERN.fullmatch(posts_path.parent.parent.name) is not None
+    )
     if (
         posts_path.name != "dedup_posts.csv"
-        or STAMP_PATTERN.fullmatch(posts_path.parent.name) is None
+        or not (in_bundle_root or in_agent_codebook)
     ):
         raise ValueError(
             "Expected data/YYYY-MM-DD_HH-MM-SS/dedup_posts.csv, "
@@ -99,8 +104,20 @@ def read_paired_rows(
     annotation_ids = [row["post_id"] for row in annotation_rows]
     if len(post_ids) != len(set(post_ids)):
         raise ValueError(f"Post IDs must be unique in {posts_path}")
-    if post_ids != annotation_ids:
-        raise ValueError("Post and annotation IDs differ or are out of order")
+    if len(annotation_ids) != len(set(annotation_ids)):
+        raise ValueError(f"Post IDs must be unique in {annotations_path}")
+    post_id_set = set(post_ids)
+    annotation_id_set = set(annotation_ids)
+    missing = [post_id for post_id in annotation_ids if post_id not in post_id_set]
+    if missing:
+        raise ValueError(
+            f"Annotations contain IDs absent from posts; first: {missing[0]}"
+        )
+    ordered_annotated_ids = [
+        post_id for post_id in post_ids if post_id in annotation_id_set
+    ]
+    if ordered_annotated_ids != annotation_ids:
+        raise ValueError("Annotation IDs are out of post-dataset order")
     invalid = sorted(
         {
             row[term]
@@ -113,7 +130,9 @@ def read_paired_rows(
         raise ValueError(
             f"{annotations_path} contains non-binary labels: {invalid}"
         )
-    return post_rows, annotation_rows
+    posts_by_id = dict(zip(post_ids, post_rows))
+    paired_posts = [posts_by_id[post_id] for post_id in annotation_ids]
+    return paired_posts, annotation_rows
 
 
 def summarize_top_subreddits(
@@ -141,11 +160,10 @@ def summarize_top_subreddits(
             key=lambda item: (-item[1], display_names[item[0]].casefold()),
         )
         if len(ranked) < 3:
-            raise ValueError(
-                f"{term!r} has only {len(ranked)} positive-source subreddits"
-            )
-        cutoff = ranked[2][1]
-        selected = [item for item in ranked if item[1] >= cutoff]
+            selected = ranked
+        else:
+            cutoff = ranked[2][1]
+            selected = [item for item in ranked if item[1] >= cutoff]
         previous_count: int | None = None
         rank = 0
         for position, (key, count) in enumerate(selected, start=1):

@@ -35,6 +35,14 @@ class StampedAgentCodebookTests(unittest.TestCase):
                 Path("data/latest/dedup_posts.csv")
             )
 
+        nested_posts = Path(
+            "data/2026-09-05_21-06-01/agent_codebook/dedup_posts.csv"
+        )
+        self.assertEqual(
+            stamp_annotations.annotation_path_for_posts(nested_posts),
+            nested_posts.with_name("agent_codebook_annotations.csv"),
+        )
+
     def test_writes_binary_annotations_in_post_dataset_order(self):
         with TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)

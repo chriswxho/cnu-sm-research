@@ -19,10 +19,15 @@ Q3-2025-or-later windows are requested. PullPush requests use a fixed
 [`data/raw_data/sibling-abuse/`](data/raw_data/sibling-abuse/README.md).
 
 Raw retrieval artifacts and the 8,812-row deduplicated source stay under
-`data/raw_data/`. Processed handoff datasets, annotations, filter metadata,
-audits, and review shards are grouped into Pacific-time-stamped directories
-such as `data/2026-09-05_21-06-01/`. Intentionally held-out query pulls are
-kept under `data/raw_data/withheld_queries/`.
+`data/raw_data/`. By default, each Pacific-time-stamped handoff bundle
+contains exactly two top-level CSV files: `dedup_posts.csv` and
+`filter_metadata.csv`. Agent-codebook annotations and subreddit statistics
+are added at the top level only when explicitly requested. Annotation IDs may
+be an ordered subset of the post IDs when some posts are intentionally
+withheld from codebook analysis.
+Intentionally held-out query pulls stay under
+`data/raw_data/withheld_queries/`. Historical review shards created before
+this compact handoff convention remain in their original stage bundles.
 
 All things related to social media research performed by CNU School of Medicine.
 

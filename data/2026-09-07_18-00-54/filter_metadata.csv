@@ -1,0 +1,13 @@
+stage_order,stage_name,rule_order,rule_id,action,Removal criteria,records_before,records_matched,records_after,notes
+1,query_selection,1,UNSELECTED_QUERY_ONLY,EXCLUDE,search-term membership contains none of the selected queries,8812,1186,7626,Selected queries: sibling abuse; abusive sibling; abusive sister; abusive brother; sibling aggression; aggressive sibling; aggressive sister; aggressive brother
+2,date_selection,1,OUTSIDE_PACIFIC_TIME_RANGE,EXCLUDE,created before 2015-01-01T00:00:00-08:00 or on/after 2025-01-01T00:00:00-08:00,7626,728,6898,Half-open Pacific-time interval: start included; end excluded.
+3,semantic_review,1,SEMANTIC_FALSE_POSITIVE,EXCLUDE,contains category: semantic false positive (not a first-person account of real or plausibly real harmful sibling behavior),6898,2136,4762,FICTION_MEDIA=427; IRRELEVANT_KEYWORD=43; JOKE_OR_HYPOTHETICAL=8; META_RESEARCH_GENERIC=171; NONHUMAN=71; ORDINARY_CONFLICT=72; PERPETRATOR_ONLY=77; REPOST_ARCHIVE=115; SEXUAL_FANTASY_ROLEPLAY=240; THIRD_PERSON_VICTIM=558; WRONG_RELATION=354
+3,semantic_review,2,SEMANTIC_UNCERTAIN,RETAIN_FLAGGED,retained category: semantic review uncertain,4762,244,4762,Uncertain records remain in the classification set.
+4,deterministic_curation,1,REMOVED_BODY,EXCLUDE,contains only text: '[removed]' after trimming whitespace (case-insensitive),4762,620,4142,Evaluated after every preceding curation rule.
+4,deterministic_curation,2,DELETED_BODY,EXCLUDE,"contains only text: '[deleted]', optionally followed by one standalone link",4142,573,3569,Evaluated after every preceding curation rule.
+4,deterministic_curation,3,BLANK_BODY,EXCLUDE,contains only: blank or whitespace body,3569,73,3496,Evaluated after every preceding curation rule.
+4,deterministic_curation,4,LINK_ONLY_BODY,EXCLUDE,contains only: one standalone plain or Markdown link,3496,1,3495,Evaluated after every preceding curation rule.
+4,deterministic_curation,5,AGGRESSION_QUERY_ONLY,RETAIN,retained category: search-term membership contains only aggression-related selected queries,3495,96,3495,Previously excluded aggression-only records are restored in this bundle.
+4,deterministic_curation,6,NON_ENGLISH,EXCLUDE,contains category: non-English language,3495,6,3489,Evaluated after every preceding curation rule.
+4,deterministic_curation,7,LANGUAGE_UNCERTAIN,RETAIN_FLAGGED,retained category: uncertain or mixed language,3489,5,3489,Flag does not remove records.
+5,agent_codebook_routing,1,MISSING_CODEBOOK_ANNOTATION,WITHHOLD_FROM_AGENT_CODEBOOK,has no existing binary codebook annotation,3489,94,3489,Retained in the top-level dedup_posts.csv and withheld only from the nested agent_codebook pair.
